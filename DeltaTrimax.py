@@ -318,8 +318,6 @@ class DeltaTrimax():
             
             #print("jumlah gen akhir", gene.sum())
             
-            if (n_triclusters == i):
-                break
 
             if (gene.sum()==1) or (kondisi.sum()==1) or (waktu.sum()==1):
                 break
@@ -331,6 +329,9 @@ class DeltaTrimax():
             hasil_waktu.append(waktu)
 
             msr.append(self.MSR)
+
+            if (n_triclusters == i):
+                break
     
     
             # mask
