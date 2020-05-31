@@ -1,13 +1,6 @@
-<<<<<<< HEAD
 echo "masuk"
 python3 simulasi1.py
 echo "selesai"
-=======
-
-cat "menjalankan code"
-python3 simulasi1.py
-cat "code selesai"
->>>>>>> 72ee10a719c20fffe0e5a526d535132075ea70f1
 
 cd outputskripsi
 rm -rf simulasi_1
