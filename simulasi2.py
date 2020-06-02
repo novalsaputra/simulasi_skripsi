@@ -18,7 +18,7 @@ db = 0.0097
 
 from DeltaTrimax import DeltaTrimax
 b = DeltaTrimax(D)
-gb,kb,wb, msrb = b.fit(db,1.2,n_triclusters=100)
+gb,kb,wb, msrb = b.fit(db,1.2,n_triclusters=0)
 
 np.savetxt("gen2.txt",gb,fmt="%0.f")
 np.savetxt("kondisi2.txt",kb,fmt="%0.f")

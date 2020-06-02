@@ -18,7 +18,7 @@ d = 0.0099
 
 from DeltaTrimax import DeltaTrimax
 a = DeltaTrimax(D)
-g,k,w, msr = a.fit(d,1.2,n_triclusters=100)
+g,k,w, msr = a.fit(d,1.2,n_triclusters=0)
 
 np.savetxt("genc.txt",g,fmt="%0.f")
 np.savetxt("kondisic.txt",k,fmt="%0.f")
