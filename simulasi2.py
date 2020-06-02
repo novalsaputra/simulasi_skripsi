@@ -20,7 +20,7 @@ from DeltaTrimax import DeltaTrimax
 b = DeltaTrimax(D)
 gb,kb,wb, msrb = b.fit(db,1.2,n_triclusters=100)
 
-np.savetxt("gen.txt",gb,fmt="%0.f")
-np.savetxt("kondisi.txt",kb,fmt="%0.f")
-np.savetxt("waktu.txt",wb,fmt="%0.f")
-np.savetxt("msr.txt",msrb)
+np.savetxt("gen2.txt",gb,fmt="%0.f")
+np.savetxt("kondisi2.txt",kb,fmt="%0.f")
+np.savetxt("waktu2.txt",wb,fmt="%0.f")
+np.savetxt("msr2.txt",msrb)

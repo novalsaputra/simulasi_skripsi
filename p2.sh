@@ -4,10 +4,10 @@ rm -rf simulasi_2
 mkdir simulasi_2
 
 cd ..
-mv gen.txt outputskripsi/simulasi_2/gen.txt
-mv kondisi.txt outputskripsi/simulasi_2/kondisi.txt
-mv waktu.txt outputskripsi/simulasi_2/waktu.txt
-mv msr.txt outputskripsi/simulasi_2/msr.txt
+mv gen2.txt outputskripsi/simulasi_2/gen.txt
+mv kondisi2.txt outputskripsi/simulasi_2/kondisi.txt
+mv waktu2.txt outputskripsi/simulasi_2/waktu.txt
+mv msr2.txt outputskripsi/simulasi_2/msr.txt
 
 cd outputskripsi
 
@@ -18,8 +18,3 @@ git add .
 git commit -m 'add'
 git push origin master
 
-cd ..
-rm gen.txt
-rm kondisitxt
-rm waktu.txt
-rm msr.txt

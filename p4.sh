@@ -1,4 +1,4 @@
-python3 simulasi1.py
+python3 simulasi4.py
 cd outputskripsi
 rm -rf simulasi_4
 mkdir simulasi_4
