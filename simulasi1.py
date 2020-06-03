@@ -18,7 +18,7 @@ da = 0.0075
 
 from DeltaTrimax import DeltaTrimax
 a = DeltaTrimax(D)
-ga,ka,wa, msra = a.fit(da,1.2,n_triclusters=100)
+ga,ka,wa, msra = a.fit(da,1.2,n_triclusters=0)
 
 np.savetxt("gen.txt",ga,fmt="%0.f")
 np.savetxt("kondisi.txt",ka,fmt="%0.f")
