@@ -14,7 +14,7 @@ t12 = np.loadtxt("data/tp12.txt", comments="#",  unpack=False)
 D = np.array([t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12])
 
 
-db = 0.0097
+db = 0.0089
 
 from DeltaTrimax import DeltaTrimax
 b = DeltaTrimax(D)
