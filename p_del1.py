@@ -19,16 +19,9 @@ delta = 0.0068
 l = [1.2, 1.4, 1.6, 1.8, 2]
 
 
-os.system("(
-        cd outputskripsi
-        git config --global user.email 'noval.saputra0707@gmail.com'
-        git config --global user.name 'novalsaputra'
-        )")
+os.system("(cd outputskripsi; git config --global user.email 'noval.saputra0707@gmail.com'; git config --global user.name 'novalsaputra')")
 
-os.system("(
-        cd outputskripsi
-        rm -rf simulasi_1
-        mkdir simulasi_1)")
+os.system("(cd outputskripsi; rm -rf simulasi_1; mkdir simulasi_1)")
 
 from DeltaTrimax import DeltaTrimax
 DT = DeltaTrimax(D)
@@ -40,27 +33,13 @@ for l in l:
     np.savetxt("waktu.txt",wa,fmt="%0.f")
     np.savetxt("msr.txt",msra)
 
-    os.system("(
-            cd outputskripsi
-            git pull origin master
-            cd simulasi_1
-            mkdir lambda_{}
+    os.system("(cd outputskripsi; git pull origin master; cd simulasi_1; mkdir lambda_{})".format(l))
     
-            cd ../../
-            mv gen.txt outputskripsi/simulasi_1//lambda_{}/gen.txt
-            mv kondisi.txt outputskripsi/simulasi_1/lambda_{}/kondisi.txt
-            mv waktu.txt outputskripsi/simulasi_1/lambda_{}/waktu.txt
-            mv msr.txt outputskripsi/simulasi_1/lambda_{}/msr.txt
+    os.system("mv gen.txt outputskripsi/simulasi_1//lambda_{}/gen.txt".format(l))
+    os.system("mv kondisi.txt outputskripsi/simulasi_1/lambda_{}/kondisi.txt".format(l))
+    os.system("mv waktu.txt outputskripsi/simulasi_1/lambda_{}/waktu.txt".format(l))
+    os.system("mv msr.txt outputskripsi/simulasi_1/lambda_{}/msr.txt".format(l))
             
-            cd outputskripsi
-            git add .
-            git commit -m 'add lamda {}'
-            git push origin master
-            )".format(l,l,l,l,l,l))
+    os.system("(cd outputskripsi; git add .; git commit -m 'add lamda {}';git push origin master)".format(l))
 
-    os.system("(
-            rm gen.txt
-            rm kondisi.txt
-            rm waktu.txt
-            rm msr.txt
-            )")
+    os.system("(rm gen.txt;rm kondisi.txt;rm waktu.txt;rm msr.txt)")
