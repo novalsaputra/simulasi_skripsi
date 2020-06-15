@@ -20,7 +20,7 @@ from DeltaTrimax import DeltaTrimax
 a = DeltaTrimax(D)
 ga,ka,wa, msra = a.fit(da,1.2,n_triclusters=0)
 
-np.savetxt("gen.txt",ga,fmt="%0.f")
-np.savetxt("kondisi.txt",ka,fmt="%0.f")
-np.savetxt("waktu.txt",wa,fmt="%0.f")
-np.savetxt("msr.txt",msra)
+np.savetxt("gen1.txt",ga,fmt="%0.f")
+np.savetxt("kondisi1.txt",ka,fmt="%0.f")
+np.savetxt("waktu1.txt",wa,fmt="%0.f")
+np.savetxt("msr1.txt",msra)

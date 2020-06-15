@@ -14,13 +14,13 @@ t12 = np.loadtxt("data/tp12.txt", comments="#",  unpack=False)
 D = np.array([t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12])
 
 
-d = 0.0106
+da = 0.0136
 
 from DeltaTrimax import DeltaTrimax
 a = DeltaTrimax(D)
-g,k,w, msr = a.fit(d,1.2,n_triclusters=0)
+ga,ka,wa, msra = a.fit(da,1.25,n_triclusters=0)
 
-np.savetxt("gen3.txt",g,fmt="%0.f")
-np.savetxt("kondisi3.txt",k,fmt="%0.f")
-np.savetxt("waktu3.txt",w,fmt="%0.f")
-np.savetxt("msr3.txt",msr)
+np.savetxt("gen14.txt",ga,fmt="%0.f")
+np.savetxt("kondisi14.txt",ka,fmt="%0.f")
+np.savetxt("waktu14.txt",wa,fmt="%0.f")
+np.savetxt("msr14.txt",msra)

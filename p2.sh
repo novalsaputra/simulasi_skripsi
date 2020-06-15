@@ -1,5 +1,10 @@
 python3 simulasi2.py
 cd outputskripsi
+
+git pull origin master
+git config --global user.email "novalsaputra0707@gmail.com"
+git config --global user.name "novalsaputra"
+
 rm -rf simulasi_2
 mkdir simulasi_2
 
@@ -11,8 +16,6 @@ mv msr2.txt outputskripsi/simulasi_2/msr.txt
 
 cd outputskripsi
 
-git config --global user.email "novalsaputra0707@gmail.com"
-git config --global user.name "novalsaputra"
 
 git add .
 git commit -m 'add'

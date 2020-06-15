@@ -18,9 +18,9 @@ d = 0.0106
 
 from DeltaTrimax import DeltaTrimax
 a = DeltaTrimax(D)
-g,k,w, msr = a.fit(d,1.2,n_triclusters=0)
+g,k,w, msr = a.fit(d,1.15,n_triclusters=0)
 
-np.savetxt("gen3.txt",g,fmt="%0.f")
-np.savetxt("kondisi3.txt",k,fmt="%0.f")
-np.savetxt("waktu3.txt",w,fmt="%0.f")
-np.savetxt("msr3.txt",msr)
+np.savetxt("gen8.txt",g,fmt="%0.f")
+np.savetxt("kondisi8.txt",k,fmt="%0.f")
+np.savetxt("waktu8.txt",w,fmt="%0.f")
+np.savetxt("msr8.txt",msr)
