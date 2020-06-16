@@ -9,10 +9,10 @@ rm -rf simulasi_8
 mkdir simulasi_8
 
 cd ..
-mv genc8.txt outputskripsi/simulasi_8/gen8.txt
-mv kondisic8.txt outputskripsi/simulasi_8/kondisi8.txt
-mv waktuc8.txt outputskripsi/simulasi_8/waktu8.txt
-mv msrc8.txt outputskripsi/simulasi_8/msr8.txt
+mv gen8.txt outputskripsi/simulasi_8/gen8.txt
+mv kondisi8.txt outputskripsi/simulasi_8/kondisi8.txt
+mv waktu8.txt outputskripsi/simulasi_8/waktu8.txt
+mv msr8.txt outputskripsi/simulasi_8/msr8.txt
 mv ket8.txt outputskripsi/simulasi_8/ket8.txt
 
 cd outputskripsi
