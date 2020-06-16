@@ -1,4 +1,4 @@
-python3 simulasi15.py && >> ket.txt
+python3 simulasi15.py | tee ket.txt
 cd outputskripsi
 
 git config --global user.email "novalsaputra0707@gmail.com"
