@@ -1,4 +1,4 @@
-python3 simulasi11.py | tee ket.txt
+python3 simulasi11.py | tee ket11.txt
 cd outputskripsi
 
 git config --global user.email "novalsaputra0707@gmail.com"
@@ -9,11 +9,11 @@ rm -rf simulasi_11
 mkdir simulasi_11
 
 cd ..
-mv gen5.txt outputskripsi/simulasi_11/gen.txt
-mv kondisi5.txt outputskripsi/simulasi_11/kondisi.txt
-mv waktu5.txt outputskripsi/simulasi_11/waktu.txt
-mv msr5.txt outputskripsi/simulasi_11/msr.txt
-mv ket.txt outputskripsi/simulasi_11/ket.txt
+mv gen11.txt outputskripsi/simulasi_11/gen11.txt
+mv kondisi11.txt outputskripsi/simulasi_11/kondisi11.txt
+mv waktu11.txt outputskripsi/simulasi_11/waktu11.txt
+mv msr11.txt outputskripsi/simulasi_11/msr11.txt
+mv ket11.txt outputskripsi/simulasi_11/ket11.txt
 
 cd outputskripsi
 
