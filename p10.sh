@@ -1,8 +1,9 @@
-python3 simulasi10.py >> ket.txt
+python3 simulasi10.py && >> ket.txt
 cd outputskripsi
 
 git config --global user.email "novalsaputra0707@gmail.com"
 git config --global user.name "novalsaputra"
+git pull origin master
 
 rm -rf simulasi_10
 mkdir simulasi_10
