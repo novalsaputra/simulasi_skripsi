@@ -2,8 +2,6 @@ import numpy as np
 import sys
 import time
 
-awal = time.time()
-
 class DeltaTrimax():
     def __init__(self,D):
         self.D = D.copy()
@@ -280,6 +278,8 @@ class DeltaTrimax():
         self.D[w,g,k] = mask_val
     
     def fit(self, delta, lamda, n_triclusters=0):
+
+        awal = time.time()
         
         n_waktu, n_gene, n_kondisi = self.D.shape
         
