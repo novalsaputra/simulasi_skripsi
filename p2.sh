@@ -1,4 +1,4 @@
-python3 simulasi2.py
+python3 simulasi2.py | tee ket2.txt
 cd outputskripsi
 
 git pull origin master
@@ -13,7 +13,7 @@ mv gen2.txt outputskripsi/simulasi_2/gen.txt
 mv kondisi2.txt outputskripsi/simulasi_2/kondisi.txt
 mv waktu2.txt outputskripsi/simulasi_2/waktu.txt
 mv msr2.txt outputskripsi/simulasi_2/msr.txt
-
+mv ket2.txt outputskripsi/simulasi_2/ket.txt
 cd outputskripsi
 
 
