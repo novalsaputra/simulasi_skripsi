@@ -324,7 +324,7 @@ class DeltaTrimax():
 
             if (gene.sum()==1) or (kondisi.sum()==1) or (waktu.sum()==1):
             	akhir = ((time.time()-awal)/60)
-            	print("\n \n Waktu Komputasi : {} menit".format(akhir))
+            	print("\n Waktu Komputasi : {} menit".format(akhir))
                 break
             
             print("\n------------- MSR: ",self.MSR)
